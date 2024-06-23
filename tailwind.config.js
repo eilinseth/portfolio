@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     container:{
       center:true,
-      padding:'16px'
+      padding:"7%"
     },
     extend: {
       colors:{
@@ -15,7 +15,7 @@ module.exports = {
         poppins : "Poppins"
       },
       screens:{
-        '2xl' : '12000px'
+        '2xl' : '1200px'
       }
     },
   },
