@@ -7,12 +7,41 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class="font-poppins min-h-[2000px]">
+
+    <!-- Navbar start -->
+     <header id="navbar">
+        <div class="w-full lg:fixed lg:bg-transparent lg:z-[9999] lg:backdrop-blur-xl lg:mix-blend-difference">
+          <div class="container ">
+            <div class="px-4 flex justify-between h-[60px] items-center relative lg:static">
+              <div class="lg:w-1/4 ">
+                <a href="#" class="text-4xl text-primer block font-bold italic">Eilin Seth</a>
+              </div>
+              
+              <button class="tombol lg:hidden -translate-y-0.5" id="hambuger">
+                <span class="hamburger-span -z-10 bg-primer transition-all duration-300"></span>
+                <span class="hamburger-span -z-10 bg-primer transition-all duration-300"></span>
+                <span class="hamburger-span -z-10 bg-primer transition-all duration-300"></span>
+              </button>
+              <div id="nav" class="transition-all duration-300 nav -right-8 w-[180px] flex absolute -top-[200%]  flex-col gap-2 bg-white shadow-lg shadow-slate-300 max-w-xl lg:shadow-none text-lg font-semibold text-slate-600 items-center lg:bg-transparent lg:top-0 lg:flex-row lg:w-3/4  lg:static lg:justify-around">
+                  <a href="#home" class="border-b-2 hover:text-primer lg:border-b-0 lg:text-primer lg:text-xl">Home</a>
+                  <a href="#about" class="border-b-2 hover:text-primer lg:border-b-0 lg:text-primer lg:text-xl">Tentang Saya</a>
+                  <a href="#" class="border-b-2 hover:text-primer lg:border-b-0 lg:text-primer lg:text-xl">Project Saya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </header>
+    <!-- Navbar end -->
+
+
+
     <!-- Hero section start -->
 
     <section id="home">
@@ -103,5 +132,8 @@
       </div> 
     </section>
     <!-- About section end -->
+
+    <!-- myscript -->
+     <script src="src/script.js"></script>
   </body>
 </html>

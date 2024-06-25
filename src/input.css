@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .hamburger-span {
+    @apply block w-[30px] h-[4px] bg-slate-600 mt-1 pointer-events-none;
+  }
+}
+
+.tombol.active > span:nth-child(1){
+    @apply origin-top-left rotate-45 -translate-y-1 bg-[salmon]
+}
+.tombol.active > span:nth-child(2){
+    @apply scale-0
+}
+.tombol.active > span:nth-child(3){
+    @apply origin-bottom-left -rotate-45 bg-[salmon]
+}
+
+.nav.active{
+    @apply top-[100%] min-h-[30vh]  justify-evenly
+}
