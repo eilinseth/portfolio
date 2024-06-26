@@ -642,6 +642,11 @@ video {
   z-index: 9999;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -670,28 +675,52 @@ video {
   margin-top: 0.75rem;
 }
 
-.mt-\[140px\] {
-  margin-top: 140px;
+.mt-\[60px\] {
+  margin-top: 60px;
 }
 
-.mt-\[200px\] {
-  margin-top: 200px;
+.-mt-4 {
+  margin-top: -1rem;
 }
 
-.mt-\[100px\] {
+.-mt-8 {
+  margin-top: -2rem;
+}
+
+.-mt-10 {
+  margin-top: -2.5rem;
+}
+
+.mt-100 {
   margin-top: 100px;
 }
 
-.mt-\[80px\] {
-  margin-top: 80px;
+.-mt-12 {
+  margin-top: -3rem;
 }
 
-.mt-\[70px\] {
-  margin-top: 70px;
+.-mt-32 {
+  margin-top: -8rem;
 }
 
-.mt-\[60px\] {
-  margin-top: 60px;
+.-mt-28 {
+  margin-top: -7rem;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+.-mt-24 {
+  margin-top: -6rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .block {
@@ -785,8 +814,16 @@ video {
   align-self: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border {
@@ -812,6 +849,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -831,44 +873,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-36 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
-.py-\[150\] {
-  padding-top: 150;
-  padding-bottom: 150;
-}
-
-.py-\[150px\] {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
-.py-\[110px\] {
-  padding-top: 110px;
-  padding-bottom: 110px;
-}
-
 .py-\[100px\] {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.py-\[90px\] {
-  padding-top: 90px;
-  padding-bottom: 90px;
 }
 
 .py-\[80px\] {
@@ -876,9 +883,48 @@ video {
   padding-bottom: 80px;
 }
 
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .py-\[140px\] {
   padding-top: 140px;
   padding-bottom: 140px;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-poppins {
@@ -908,6 +954,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -958,6 +1009,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gelap {
+  --tw-text-opacity: 1;
+  color: rgb(2 6 23 / var(--tw-text-opacity));
 }
 
 .mix-blend-difference {
@@ -1030,6 +1086,14 @@ video {
   background-color: rgb(106 90 205 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-primer\/80:hover {
+  background-color: rgb(106 90 205 / 0.8);
+}
+
+.hover\:bg-primer\/90:hover {
+  background-color: rgb(106 90 205 / 0.9);
+}
+
 .hover\:text-primer:hover {
   --tw-text-opacity: 1;
   color: rgb(106 90 205 / var(--tw-text-opacity));
@@ -1040,7 +1104,22 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.active\:bg-indigo-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 48 163 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:-mt-10 {
+    margin-top: -2.5rem;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:translate-x-14 {
     --tw-translate-x: 3.5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1071,8 +1150,17 @@ video {
     top: 0px;
   }
 
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .lg\:hidden {
@@ -1089,6 +1177,10 @@ video {
 
   .lg\:w-3\/4 {
     width: 75%;
+  }
+
+  .lg\:w-10\/12 {
+    width: 83.333333%;
   }
 
   .lg\:translate-x-\[150px\] {
@@ -1110,6 +1202,11 @@ video {
 
   .lg\:bg-transparent {
     background-color: transparent;
+  }
+
+  .lg\:py-\[140px\] {
+    padding-top: 140px;
+    padding-bottom: 140px;
   }
 
   .lg\:text-5xl {

@@ -16,8 +16,8 @@
   <body class="font-poppins min-h-[2000px]">
 
     <!-- Navbar start -->
-     <header id="navbar">
-        <div class="w-full fixed bg-white  z-[9999] backdrop-blur-xl mix-blend-difference">
+     <header id="navbar" class="">
+        <div class="w-full fixed bg-white  z-[9999] backdrop-blur-xl ">
           <div class="container ">
             <div class="px-4 flex justify-between h-[60px] items-center relative lg:static">
               <div class="lg:w-1/4 ">
@@ -32,7 +32,7 @@
               <div id="nav" class="transition-all duration-300 nav -right-8 w-[180px] flex absolute -top-[200%]  flex-col gap-2 bg-white shadow-lg shadow-slate-300 max-w-xl lg:shadow-none text-lg font-semibold text-slate-600 items-center lg:bg-transparent lg:top-0 lg:flex-row lg:w-3/4  lg:static lg:justify-around">
                   <a href="#home" class="border-b-2 hover:text-primer lg:border-b-0 lg:text-primer lg:text-xl">Home</a>
                   <a href="#about" class="border-b-2 hover:text-primer lg:border-b-0 lg:text-primer lg:text-xl">Tentang Saya</a>
-                  <a href="#" class="border-b-2 hover:text-primer lg:border-b-0 lg:text-primer lg:text-xl">Project Saya</a>
+                  <a href="#portfolio" class="border-b-2 hover:text-primer lg:border-b-0 lg:text-primer lg:text-xl">Project Saya</a>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@
     <section id="home">
       <div class="container  ">
         <div class="flex flex-wrap ">
-            <div class="py-[100px] w-full px-4 self-center lg:w-1/2">
+            <div class="py-[100px] lg:py-[140px] w-full px-4 self-center lg:w-1/2">
                 <h2 class="text-primer font-medium text-xl md:text-2xl ">
                   Halo 👋 nama saya adalah<span
                     class="block text-3xl md:text-4xl lg:text-5xl font-bold text-slate-600 mt-2"
@@ -60,13 +60,13 @@
                 
                 <a
                 href="#"
-                class=" bg-primer px-8 py-2 text-white rounded-full"
+                class=" bg-primer px-8 py-2 text-white rounded-full hover:bg-primer/80 active:bg-indigo-800"
                 >Hubungi Saya</a
               >
               </div>
 
-              <div class=" w-full self-end lg:w-1/2  relative">
-                <div class="mt-10 right-0">
+              <div class=" w-full self-end lg:w-1/2  ">
+                <div class="-mt-24 lg:mt-10 px-4">
                   <img src="img/3.png"  alt="" class="max-w-full md:translate-x-14 lg:translate-x-[150px]"/>
                   <!-- <span class="absolute bottom-0 right-0 -z-10 left-1/2 -translate-x-1/2">
                     <svg viewBox="0 0 200 200" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
@@ -132,6 +132,40 @@
       </div> 
     </section>
     <!-- About section end -->
+
+    <!-- Portfolio start -->
+
+    <section id="portfolio">
+      <div class="py-10">
+        <div class="w-full  bg-slate-100 ">
+          <div class="px-4 py-8 w-full text-center">
+            <h2 class="text-primer font-semibold text-xl mb-5">Portfolio</h2>
+            <h2 class="text-gelap text-3xl font-bold mb-4">Project Terbaru</h2>
+            <p class="text-md font-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odit inventore est deserunt ea excepturi harum cum dolores quos? Soluta.</p>
+          </div>
+          <div class="flex flex-wrap lg:w-10/12 justify-center lg:mx-auto">
+            <div class="w-full md:w-1/2 px-4 overflow-hidden rounded-lg mb-10">
+              <img src="img/project/1.png" alt="" class="w-full">
+              <h2 class="mt-2 text-xl font-semibold mb-2">Gallery show</h2>
+              <p class="text-slate-500 text-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque ipsam, exercitationem nobis totam debitis!</p>
+            </div>
+            <div class="w-full md:w-1/2 px-4 overflow-hidden rounded-lg mb-10">
+              <img src="img/project/2.png" alt="" class="w-full">
+              <h2 class="mt-2 text-xl font-semibold mb-2">Cafe Shop</h2>
+              <p class="text-slate-500 text-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque ipsam, exercitationem nobis totam debitis!</p>
+            </div>
+            <div class="w-full md:w-1/2 px-4 overflow-hidden rounded-lg mb-10">
+              <img src="img/project/3.png" alt="" class="w-full">
+              <h2 class="mt-2 text-xl font-semibold mb-2">Pengelolaan Data Film</h2>
+              <p class="text-slate-500 text-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque ipsam, exercitationem nobis totam debitis!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Portfolio end -->
 
     <!-- myscript -->
      <script src="src/script.js"></script>
