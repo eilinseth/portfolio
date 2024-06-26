@@ -9,7 +9,6 @@ menu.addEventListener('click',function(e){
 })
 
 document.addEventListener('click',function(e){
-    e.preventDefault();
     if(e.target !== nav && e.target !== menu){
         menu.classList.remove('active')
         nav.classList.remove('active')
@@ -18,6 +17,3 @@ document.addEventListener('click',function(e){
     console.log(e.target)
 })
 
-window.addEventListener("mouseover",function(e){
-    console.log(e)
-})
