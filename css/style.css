@@ -702,16 +702,20 @@ video {
   width: 2.25rem;
 }
 
+.w-\[170px\] {
+  width: 170px;
+}
+
 .w-\[180px\] {
   width: 180px;
 }
 
-.w-\[200px\] {
-  width: 200px;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-\[165px\] {
+  width: 165px;
 }
 
 .max-w-full {
@@ -850,11 +854,6 @@ video {
 .py-\[80px\] {
   padding-top: 80px;
   padding-bottom: 80px;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .pb-36 {
