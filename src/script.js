@@ -17,3 +17,20 @@ document.addEventListener('click',function(e){
     console.log(e.target)
 })
 
+window.onscroll = function(){
+    const header = document.querySelector('header');
+    const fixedNav = header.offsetTop;
+    const toTOp = document.querySelector('#toTop');
+
+    if(window.scrollY > fixedNav){
+        header.classList.add('navbar-fixed')
+        toTOp.classList.remove('hidden');
+        toTOp.classList.add('flex')
+    }else{
+        header.classList.remove('navbar-fixed');
+        toTOp.classList.remove('flex');
+        toTOp.classList.add('hidden');
+    }
+}
+
+
